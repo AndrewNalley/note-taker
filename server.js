@@ -19,18 +19,16 @@ app.use(express.static('public'));
 
 // GET Route for homepage
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
-
-// GET Route for feedback page
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
-);
-
-// GET route to direct users to homepage
-app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
+
+app.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/notes.html'))
+);
+app.delete('notes', (req, res) => 
+res.sendFile(path.join(__dirname, 'public/notes.html'))
+);
+app.patch('/:id', (req, res) => res.json(`PATCH route`));
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
