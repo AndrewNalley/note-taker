@@ -33,7 +33,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Installation
 
-Make sure the npm package is installed. Run `npm start` and then go to the local host in the browser to interact with the application. (http://localhost:3001). 
+Make sure the npm package is installed. Run `npm start` and then go to the local host in the browser to interact with the application. (http://localhost:3001). Or, visit the site hosted by heroku: https://aqueous-springs-29735-51eb1397bb8e.herokuapp.com/
 
 ## Usage
 
