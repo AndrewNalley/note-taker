@@ -4,25 +4,6 @@
 
 I wanted to create a simple note taking application that allows users to create or delete notes. When a note is selected to be added or deleted, it is added or removed from the database. In building this project, I learned how to connect basic databases to the front end. 
 
-USER STORY
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-
-ACCEPTANCE CRITERIA
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Table of Contents 
 
@@ -33,7 +14,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Installation
 
-Make sure the npm package is installed. Run `npm start` and then go to the local host in the browser to interact with the application. (http://localhost:3001). Or, visit the site hosted by heroku: https://aqueous-springs-29735-51eb1397bb8e.herokuapp.com/
+Make sure the npm package is installed. Run `npm start` and then go to the local host in the browser to interact with the application. (http://localhost:3000). Or, visit the site hosted by fly.io: https://note-taker-app.fly.dev
 
 ## Usage
 
