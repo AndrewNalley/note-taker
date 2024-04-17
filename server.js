@@ -3,7 +3,8 @@ const path = require('path');
 const { clog } = require('./middleware/clog');
 const api = require('./routes/index.js');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
+const HOST = '0.0.0.0';
 
 const app = express();
 
@@ -30,6 +31,6 @@ res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
 app.patch('/:id', (req, res) => res.json(`PATCH route`));
 
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
+});
